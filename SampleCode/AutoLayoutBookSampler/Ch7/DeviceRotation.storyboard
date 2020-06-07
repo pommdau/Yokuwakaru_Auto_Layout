@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DuT-uW-9ON">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Device Rotation View Controller-->
+        <scene sceneID="k0x-Cn-c1c">
+            <objects>
+                <viewController id="DuT-uW-9ON" customClass="DeviceRotationViewController" customModule="autoLayoutBookSamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cEa-uF-Vxi"/>
+                        <viewControllerLayoutGuide type="bottom" id="NFr-CV-jNk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hOs-94-OnB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="マルチーズ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbS-r3-6zY">
+                                <rect key="frame" x="16" y="28" width="288" height="32.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" misplaced="YES" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="mMv-8T-7UB">
+                                <rect key="frame" x="20" y="68" width="200" height="200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="136-T3-fiZ">
+                                <rect key="frame" x="16" y="290.5" width="288" height="243.5"/>
+                                <string key="text">地中海に浮かぶ島国のマルタ島で生まれたことからこの名がついた。性質は大人しく、人なつっこい。明るく、外交的ではあるが、神経質なところもある。しかし、基本的に従順であり初心者でも飼いやすい。抱き犬として知られ、甘えたがり。大胆なところがあり、他の大型犬に対しても臆することなく振舞う面もある。暑さ・寒さにはあまり強くないので、屋内で飼うのが一般的である。下毛がないので抜け毛がない。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xbS-r3-6zY" firstAttribute="leading" secondItem="hOs-94-OnB" secondAttribute="leadingMargin" id="FHT-EJ-QPd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xbS-r3-6zY" secondAttribute="trailing" id="FM2-54-1wf"/>
+                            <constraint firstItem="136-T3-fiZ" firstAttribute="leading" secondItem="mMv-8T-7UB" secondAttribute="trailing" constant="15" id="Fjy-GD-p2X"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="mMv-8T-7UB" secondAttribute="leading" id="J6i-nv-CNd"/>
+                            <constraint firstItem="xbS-r3-6zY" firstAttribute="top" secondItem="cEa-uF-Vxi" secondAttribute="bottom" constant="8" id="JM5-9l-kKK"/>
+                            <constraint firstItem="136-T3-fiZ" firstAttribute="leading" secondItem="hOs-94-OnB" secondAttribute="leadingMargin" id="R1L-I4-63E"/>
+                            <constraint firstItem="136-T3-fiZ" firstAttribute="top" secondItem="mMv-8T-7UB" secondAttribute="bottom" constant="15" id="n1J-2q-4gr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="136-T3-fiZ" secondAttribute="trailing" id="nxh-Y3-gc1"/>
+                            <constraint firstItem="136-T3-fiZ" firstAttribute="top" secondItem="xbS-r3-6zY" secondAttribute="bottom" constant="15" id="syt-9N-cNt"/>
+                            <constraint firstItem="mMv-8T-7UB" firstAttribute="top" secondItem="xbS-r3-6zY" secondAttribute="bottom" constant="15" id="x33-Se-uvi"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Fjy-GD-p2X"/>
+                                <exclude reference="syt-9N-cNt"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="detailLabelLandScapeLeftConstraint" destination="Fjy-GD-p2X" id="lTO-gH-Avw"/>
+                        <outlet property="detailLabelLandScapeTopConstraint" destination="syt-9N-cNt" id="9Qf-Am-oMX"/>
+                        <outlet property="detailLabelPortraitLeftConstraint" destination="R1L-I4-63E" id="M69-Kz-ouO"/>
+                        <outlet property="detailLabelPortraitTopConstraint" destination="n1J-2q-4gr" id="3Lg-h6-i1v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Twa-or-8j5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="293" y="395"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dog" width="200" height="200"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jXr-Sx-DXS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--天気-->
+        <scene sceneID="fb9-3n-Asf">
+            <objects>
+                <viewController id="jXr-Sx-DXS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pLz-zV-j5N"/>
+                        <viewControllerLayoutGuide type="bottom" id="LVr-nv-GVk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ahg-9n-tDw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2Q-gJ-yoD">
+                                <rect key="frame" x="227" y="229" width="146" height="141"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="晴れ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flu-jT-oFA" userLabel="weatherLabel">
+                                        <rect key="frame" x="78" y="86" width="68" height="41"/>
+                                        <accessibility key="accessibilityConfiguration" label="weatherLabel"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_sun" translatesAutoresizingMaskIntoConstraints="NO" id="tDJ-Cx-AMX" userLabel="weatherIcon">
+                                        <rect key="frame" x="0.0" y="71" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="VeS-JZ-1KI"/>
+                                            <constraint firstAttribute="width" constant="70" id="fPR-ll-1zE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="東京" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xb4-ie-Wvk" userLabel="locationLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="146" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="flu-jT-oFA" firstAttribute="leading" secondItem="tDJ-Cx-AMX" secondAttribute="trailing" constant="8" id="5Rt-Oh-6GM"/>
+                                    <constraint firstAttribute="bottom" secondItem="tDJ-Cx-AMX" secondAttribute="bottom" id="66g-5b-HgU"/>
+                                    <constraint firstAttribute="trailing" secondItem="flu-jT-oFA" secondAttribute="trailing" id="EAG-fn-mlT"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xb4-ie-Wvk" secondAttribute="trailing" id="STC-HO-teJ"/>
+                                    <constraint firstItem="tDJ-Cx-AMX" firstAttribute="top" secondItem="Xb4-ie-Wvk" secondAttribute="bottom" constant="30" id="VQZ-YO-iTN"/>
+                                    <constraint firstItem="Xb4-ie-Wvk" firstAttribute="top" secondItem="Z2Q-gJ-yoD" secondAttribute="top" id="cvf-NW-Di3"/>
+                                    <constraint firstItem="Xb4-ie-Wvk" firstAttribute="leading" secondItem="Z2Q-gJ-yoD" secondAttribute="leading" id="fgv-PD-WTL"/>
+                                    <constraint firstItem="tDJ-Cx-AMX" firstAttribute="leading" secondItem="Z2Q-gJ-yoD" secondAttribute="leading" id="ijx-E9-aUJ"/>
+                                    <constraint firstItem="flu-jT-oFA" firstAttribute="centerY" secondItem="tDJ-Cx-AMX" secondAttribute="centerY" id="oz7-By-UkY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z2Q-gJ-yoD" firstAttribute="centerX" secondItem="ahg-9n-tDw" secondAttribute="centerX" id="UkG-qf-om4"/>
+                            <constraint firstItem="Z2Q-gJ-yoD" firstAttribute="centerY" secondItem="ahg-9n-tDw" secondAttribute="centerY" id="Y5c-Qe-jdO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="天気" id="opG-0H-ztC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4L-4Q-e37" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-631" y="239"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_sun" width="100" height="100"/>
+    </resources>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FCH-kH-kP3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--名言-->
+        <scene sceneID="k36-Vm-mmb">
+            <objects>
+                <viewController id="FCH-kH-kP3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2yd-OH-10k"/>
+                        <viewControllerLayoutGuide type="bottom" id="0G2-yK-eqS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GMK-X4-UtB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Albert Einstein" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h19-3b-W6M" userLabel="nameLabel">
+                                <rect key="frame" x="74" y="240" width="105.5" height="19.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinstein" translatesAutoresizingMaskIntoConstraints="NO" id="ST6-BE-66B" userLabel="image">
+                                <rect key="frame" x="16" y="205" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="GGQ-dr-BVT"/>
+                                    <constraint firstAttribute="height" constant="50" id="TES-Gc-NJr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuS-Qm-7jW" userLabel="quoteLabel">
+                                <rect key="frame" x="20" y="72" width="560" height="103.5"/>
+                                <string key="text">Gravitation cannot be held responsible for people falling in love. How on earth can you explain in terms of chemistry and physics so important a biological phenomenon as first love? Put your hand on a stove for a minute and it seems like an hour. Sit with that special girl for an hour and it seems like a minute. That's relativity.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h19-3b-W6M" firstAttribute="baseline" secondItem="ST6-BE-66B" secondAttribute="baseline" id="6xa-O9-DfI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CuS-Qm-7jW" secondAttribute="trailing" id="8Iy-cc-gdW"/>
+                            <constraint firstItem="ST6-BE-66B" firstAttribute="leading" secondItem="GMK-X4-UtB" secondAttribute="leadingMargin" constant="-4" id="9Ff-YJ-OGG"/>
+                            <constraint firstItem="CuS-Qm-7jW" firstAttribute="top" secondItem="2yd-OH-10k" secondAttribute="bottom" constant="8" id="cOa-7M-HgN"/>
+                            <constraint firstItem="ST6-BE-66B" firstAttribute="top" secondItem="CuS-Qm-7jW" secondAttribute="bottom" constant="30" id="e6l-t1-rA7"/>
+                            <constraint firstItem="CuS-Qm-7jW" firstAttribute="leading" secondItem="GMK-X4-UtB" secondAttribute="leadingMargin" id="uml-Fd-f8a"/>
+                            <constraint firstItem="h19-3b-W6M" firstAttribute="leading" secondItem="ST6-BE-66B" secondAttribute="trailing" constant="8" id="yJx-KQ-0Pl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="名言" id="HkR-lx-Hzx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o0i-h2-7m1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234" y="376"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AlbertEinstein" width="100" height="133"/>
+    </resources>
+</document>

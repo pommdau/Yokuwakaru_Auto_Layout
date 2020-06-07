@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XibAndStoryboard" customModule="autoLayoutBookSamples" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="56Y-4H-iBX" id="AUN-Vv-0Q0"/>
+                <outlet property="imageView" destination="2Ob-WD-0xC" id="lAa-Du-dfs"/>
+                <outlet property="titleLabel" destination="kVb-Av-jwb" id="qK3-35-SmH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="56Y-4H-iBX">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="266"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jeffsuke60" translatesAutoresizingMaskIntoConstraints="NO" id="2Ob-WD-0xC">
+                    <rect key="frame" x="8" y="8" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Dmu-ZK-Pyq"/>
+                        <constraint firstAttribute="width" constant="60" id="gdM-df-vA2"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" verticalCompressionResistancePriority="1000" text="コウテイペンギンは、ペンギンの一種でペンギン科コウテイペンギン属に分類される。コウテイペンギンは、ペンギンの一種でペンギン科コウテイペンギン属に分類される。コウテイペンギンは、ペンギンの一種でペンギン科コウテイペンギン属に分類される。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVb-Av-jwb">
+                    <rect key="frame" x="76" y="8" width="350" height="220"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="224" id="kqA-lZ-2vn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="kqA-lZ-2vn"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm4-2D-NAK">
+                    <rect key="frame" x="332" y="236" width="86" height="30"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="86" id="2KG-cz-u2e"/>
+                    </constraints>
+                    <state key="normal" title="Like Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="likeTapped:" destination="-1" eventType="touchUpInside" id="JKa-kY-mbN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Mm4-2D-NAK" secondAttribute="trailing" constant="8" id="0KW-eA-2x2"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2Ob-WD-0xC" secondAttribute="bottom" id="9f4-Te-BTC"/>
+                <constraint firstItem="2Ob-WD-0xC" firstAttribute="top" secondItem="56Y-4H-iBX" secondAttribute="top" constant="8" id="ZIu-K9-0c1"/>
+                <constraint firstItem="kVb-Av-jwb" firstAttribute="top" secondItem="2Ob-WD-0xC" secondAttribute="top" id="aQA-2P-KRM"/>
+                <constraint firstAttribute="bottom" secondItem="Mm4-2D-NAK" secondAttribute="bottom" id="iO4-zd-0hr"/>
+                <constraint firstItem="2Ob-WD-0xC" firstAttribute="leading" secondItem="56Y-4H-iBX" secondAttribute="leading" constant="8" id="oVb-IY-WXo"/>
+                <constraint firstItem="kVb-Av-jwb" firstAttribute="leading" secondItem="2Ob-WD-0xC" secondAttribute="trailing" constant="8" id="r24-ag-nA2"/>
+                <constraint firstAttribute="trailing" secondItem="kVb-Av-jwb" secondAttribute="trailing" id="uVU-N0-iBW"/>
+                <constraint firstItem="Mm4-2D-NAK" firstAttribute="top" secondItem="kVb-Av-jwb" secondAttribute="bottom" constant="8" id="yg2-kE-G6z"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="343" y="278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jeffsuke60" width="60" height="60"/>
+    </resources>
+</document>

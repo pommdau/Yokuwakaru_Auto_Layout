@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="70b-Uj-Mso">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Travel Diary-->
+        <scene sceneID="DTD-67-pfZ">
+            <objects>
+                <viewController id="70b-Uj-Mso" customClass="AutoLayoutExampleViewController" customModule="autoLayoutBookSamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lvE-Cw-YZp"/>
+                        <viewControllerLayoutGuide type="bottom" id="HVO-US-Ki3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="clY-hK-xVj">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="350"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Jd-yc-DEZ">
+                                <rect key="frame" x="0.0" y="0.0" width="350" height="310"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X8d-VJ-a3u">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="385"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="SF" translatesAutoresizingMaskIntoConstraints="NO" id="RNF-Xz-dxM">
+                                                <rect key="frame" x="8" y="52" width="159" height="104"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="104" id="5FK-5v-6aC"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="104" id="O2J-4g-PHv"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="159" id="RBg-oo-n5M"/>
+                                                    <constraint firstAttribute="width" constant="159" id="nD3-pv-fVc"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="nyc" translatesAutoresizingMaskIntoConstraints="NO" id="La5-wL-NMx">
+                                                <rect key="frame" x="8" y="205" width="159" height="109"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="109" id="Sqi-fK-zM0"/>
+                                                    <constraint firstAttribute="width" constant="159" id="khC-xY-tRG"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="159" id="loZ-hH-3vC"/>
+                                                    <constraint firstAttribute="height" constant="109" id="wbG-t3-13J"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="私の旅行記。今年は、ニューヨーク、サンフランシスコを訪問。今後は、シカゴや、シアトル、オースティンなどを訪問予定。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eoh-GU-tJv" customClass="DynamicCellLabel" customModule="autoLayoutBookSamples" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="334" width="334" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アメリカ旅行記" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJ5-3e-zZ2">
+                                                <rect key="frame" x="115" y="10" width="119" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="ニューヨーク訪問。世界のファッションの中心と言われるだけあり、おしゃれな人が多かった。一度は住んでみたい。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPE-ho-EwX" customClass="DynamicCellLabel" customModule="autoLayoutBookSamples" customModuleProvider="target">
+                                                <rect key="frame" x="175" y="205" width="167" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="サンフランシスコのカフェに行ってきた。巨大な焙煎機を前に感動" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqJ-fi-aPg" customClass="DynamicCellLabel" customModule="autoLayoutBookSamples" customModuleProvider="target">
+                                                <rect key="frame" x="175" y="53" width="167" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="RNF-Xz-dxM" firstAttribute="top" secondItem="kJ5-3e-zZ2" secondAttribute="bottom" constant="21" id="AAJ-rN-2pd"/>
+                                            <constraint firstItem="La5-wL-NMx" firstAttribute="top" secondItem="RNF-Xz-dxM" secondAttribute="bottom" constant="49" id="CQx-0h-HG1"/>
+                                            <constraint firstItem="bqJ-fi-aPg" firstAttribute="leading" secondItem="RNF-Xz-dxM" secondAttribute="trailing" constant="8" id="CXh-xm-LSc"/>
+                                            <constraint firstItem="bqJ-fi-aPg" firstAttribute="top" secondItem="kJ5-3e-zZ2" secondAttribute="bottom" constant="22" id="FhU-Rx-2Cs"/>
+                                            <constraint firstItem="Eoh-GU-tJv" firstAttribute="top" secondItem="La5-wL-NMx" secondAttribute="bottom" constant="20" id="LAB-uK-JQC"/>
+                                            <constraint firstAttribute="trailing" secondItem="Eoh-GU-tJv" secondAttribute="trailing" constant="8" id="LEZ-UO-1nG"/>
+                                            <constraint firstItem="Eoh-GU-tJv" firstAttribute="leading" secondItem="X8d-VJ-a3u" secondAttribute="leading" constant="8" id="UJG-s3-Hee"/>
+                                            <constraint firstItem="La5-wL-NMx" firstAttribute="leading" secondItem="X8d-VJ-a3u" secondAttribute="leading" constant="8" id="Wkm-59-PMN"/>
+                                            <constraint firstItem="Eoh-GU-tJv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="xPE-ho-EwX" secondAttribute="bottom" constant="20" id="YLj-Sg-QxT"/>
+                                            <constraint firstItem="kJ5-3e-zZ2" firstAttribute="centerX" secondItem="X8d-VJ-a3u" secondAttribute="centerX" id="a5J-C8-QSQ"/>
+                                            <constraint firstItem="RNF-Xz-dxM" firstAttribute="leading" secondItem="X8d-VJ-a3u" secondAttribute="leading" constant="8" id="f4v-1i-TsD"/>
+                                            <constraint firstItem="xPE-ho-EwX" firstAttribute="leading" secondItem="La5-wL-NMx" secondAttribute="trailing" constant="8" id="gc7-QH-yx3"/>
+                                            <constraint firstAttribute="bottom" secondItem="Eoh-GU-tJv" secondAttribute="bottom" constant="30" id="j51-tc-85I"/>
+                                            <constraint firstAttribute="trailing" secondItem="bqJ-fi-aPg" secondAttribute="trailing" constant="8" id="kZd-5O-9cN"/>
+                                            <constraint firstItem="kJ5-3e-zZ2" firstAttribute="top" secondItem="X8d-VJ-a3u" secondAttribute="top" constant="10" id="nc8-Ym-wcf"/>
+                                            <constraint firstItem="Eoh-GU-tJv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="La5-wL-NMx" secondAttribute="bottom" constant="20" placeholder="YES" id="ooF-PN-tl4"/>
+                                            <constraint firstAttribute="trailing" secondItem="xPE-ho-EwX" secondAttribute="trailing" constant="8" id="p8R-on-q4c"/>
+                                            <constraint firstItem="La5-wL-NMx" firstAttribute="top" secondItem="xPE-ho-EwX" secondAttribute="top" id="rdS-dP-pS1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="X8d-VJ-a3u" secondAttribute="bottom" id="0ZG-XA-glB"/>
+                                    <constraint firstAttribute="trailing" secondItem="X8d-VJ-a3u" secondAttribute="trailing" constant="-25" id="5b2-P4-fUe"/>
+                                    <constraint firstItem="X8d-VJ-a3u" firstAttribute="centerX" secondItem="1Jd-yc-DEZ" secondAttribute="centerX" id="cqK-DQ-f7r"/>
+                                    <constraint firstItem="X8d-VJ-a3u" firstAttribute="top" secondItem="1Jd-yc-DEZ" secondAttribute="top" id="nbn-Dn-Ae5"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjw-ym-fBU">
+                                <rect key="frame" x="0.0" y="310" width="350" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="una-Wh-mkc">
+                                        <rect key="frame" x="113" y="0.0" width="123" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="広告枠" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hP5-az-Rt0">
+                                                <rect key="frame" x="72" y="9" width="51" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" image="icon_adverb" translatesAutoresizingMaskIntoConstraints="NO" id="CvX-J2-l8Y">
+                                                <rect key="frame" x="0.0" y="-1" width="41" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="41" id="E2s-Td-4oA"/>
+                                                    <constraint firstAttribute="width" constant="41" id="thw-4v-PIe"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="hP5-az-Rt0" secondAttribute="trailing" id="3tJ-US-dCA"/>
+                                            <constraint firstItem="hP5-az-Rt0" firstAttribute="leading" secondItem="CvX-J2-l8Y" secondAttribute="trailing" constant="31" id="KNX-SP-fq3"/>
+                                            <constraint firstItem="CvX-J2-l8Y" firstAttribute="leading" secondItem="una-Wh-mkc" secondAttribute="leading" id="prb-RS-knI"/>
+                                            <constraint firstItem="hP5-az-Rt0" firstAttribute="centerY" secondItem="CvX-J2-l8Y" secondAttribute="centerY" id="yOq-CS-IxU"/>
+                                            <constraint firstItem="CvX-J2-l8Y" firstAttribute="centerY" secondItem="una-Wh-mkc" secondAttribute="centerY" id="yaG-Gh-9a8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="una-Wh-mkc" secondAttribute="bottom" id="6jV-PK-DOZ"/>
+                                    <constraint firstItem="una-Wh-mkc" firstAttribute="centerX" secondItem="hjw-ym-fBU" secondAttribute="centerX" id="cyK-qy-E2H"/>
+                                    <constraint firstItem="una-Wh-mkc" firstAttribute="top" secondItem="hjw-ym-fBU" secondAttribute="top" id="nNP-kR-bxB"/>
+                                    <constraint firstAttribute="height" constant="40" id="zP4-yV-9BZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Jd-yc-DEZ" firstAttribute="top" secondItem="clY-hK-xVj" secondAttribute="topMargin" id="4MT-9e-o5q"/>
+                            <constraint firstAttribute="trailing" secondItem="hjw-ym-fBU" secondAttribute="trailing" id="8f7-Bi-tbR"/>
+                            <constraint firstAttribute="trailing" secondItem="1Jd-yc-DEZ" secondAttribute="trailing" id="H1l-nK-6e3"/>
+                            <constraint firstItem="X8d-VJ-a3u" firstAttribute="width" secondItem="clY-hK-xVj" secondAttribute="width" id="RRt-HQ-c5C"/>
+                            <constraint firstItem="hjw-ym-fBU" firstAttribute="leading" secondItem="clY-hK-xVj" secondAttribute="leading" id="WLN-Os-O5x"/>
+                            <constraint firstItem="HVO-US-Ki3" firstAttribute="top" secondItem="hjw-ym-fBU" secondAttribute="bottom" id="eq2-dU-ruA"/>
+                            <constraint firstItem="hjw-ym-fBU" firstAttribute="top" secondItem="1Jd-yc-DEZ" secondAttribute="bottom" id="uT8-k3-Ohd"/>
+                            <constraint firstItem="1Jd-yc-DEZ" firstAttribute="centerX" secondItem="clY-hK-xVj" secondAttribute="centerX" id="xGQ-a7-dJa"/>
+                            <constraint firstItem="1Jd-yc-DEZ" firstAttribute="leading" secondItem="clY-hK-xVj" secondAttribute="leading" id="zRr-Qj-gXJ"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="Travel Diary" id="j4j-XX-bl1">
+                        <barButtonItem key="rightBarButtonItem" title="追加" id="CbR-1h-shy"/>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="350" height="350"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eqo-HX-taD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="401" y="303"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SF" width="300" height="225"/>
+        <image name="icon_adverb" width="100" height="100"/>
+        <image name="nyc" width="1417" height="1417"/>
+    </resources>
+</document>

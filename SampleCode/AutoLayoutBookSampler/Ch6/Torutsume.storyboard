@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="amM-cE-Wix">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--トルツメ-->
+        <scene sceneID="rYn-b8-r84">
+            <objects>
+                <viewController id="amM-cE-Wix" customClass="TorutsumeViewController" customModule="autoLayoutBookSamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lyz-cL-3QM"/>
+                        <viewControllerLayoutGuide type="bottom" id="duH-Kv-Zmp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EDb-3h-yvq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinstein" translatesAutoresizingMaskIntoConstraints="NO" id="jNz-1c-ZCu">
+                                <rect key="frame" x="250" y="40" width="100" height="133"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="oI4-tf-1LZ"/>
+                                    <constraint firstAttribute="height" constant="133" id="qSY-BS-DvK"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVe-hZ-JJk">
+                                <rect key="frame" x="285" y="209.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6UW-IA-YjE"/>
+                                </constraints>
+                                <state key="normal" title="Like"/>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QTF-XL-7rc">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Label" id="hho-yB-R35">
+                                        <connections>
+                                            <action selector="PressLabelButton:" destination="amM-cE-Wix" id="7mu-KR-qQu"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Button" id="xA3-J2-dow">
+                                        <connections>
+                                            <action selector="PressButtonButton:" destination="amM-cE-Wix" id="OrX-um-1sf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Swich" id="7RP-uz-m53">
+                                        <connections>
+                                            <action selector="PressSwichButton:" destination="amM-cE-Wix" id="8hA-Ki-gA3"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Science without religion is lame, religion without science is blind." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJ2-ta-KRc">
+                                <rect key="frame" x="20" y="181" width="560" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L8o-yV-G1l">
+                                <rect key="frame" x="275" y="247.5" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="2jO-9B-hks"/>
+                                </constraints>
+                            </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AbV-00-tpj">
+                                <rect key="frame" x="0.0" y="286.5" width="600" height="1"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="H6x-EI-xa6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L8o-yV-G1l" firstAttribute="top" secondItem="GVe-hZ-JJk" secondAttribute="bottom" constant="8" id="1ug-uz-1mO"/>
+                            <constraint firstItem="AJ2-ta-KRc" firstAttribute="leading" secondItem="EDb-3h-yvq" secondAttribute="leadingMargin" id="2Rp-4q-UNA"/>
+                            <constraint firstAttribute="trailing" secondItem="QTF-XL-7rc" secondAttribute="trailing" id="7UW-3T-PN5"/>
+                            <constraint firstItem="jNz-1c-ZCu" firstAttribute="top" secondItem="lyz-cL-3QM" secondAttribute="bottom" constant="20" id="FX0-pJ-NaL"/>
+                            <constraint firstItem="AbV-00-tpj" firstAttribute="leading" secondItem="EDb-3h-yvq" secondAttribute="leading" id="HhE-Id-fwH"/>
+                            <constraint firstItem="AJ2-ta-KRc" firstAttribute="top" secondItem="jNz-1c-ZCu" secondAttribute="bottom" constant="8" id="JdB-ms-4yF"/>
+                            <constraint firstItem="GVe-hZ-JJk" firstAttribute="centerX" secondItem="EDb-3h-yvq" secondAttribute="centerX" id="KCz-is-T7E"/>
+                            <constraint firstAttribute="trailing" secondItem="AbV-00-tpj" secondAttribute="trailing" id="Oaz-oM-CE9"/>
+                            <constraint firstItem="QTF-XL-7rc" firstAttribute="leading" secondItem="EDb-3h-yvq" secondAttribute="leading" id="c4F-iw-pTe"/>
+                            <constraint firstItem="AbV-00-tpj" firstAttribute="top" secondItem="L8o-yV-G1l" secondAttribute="bottom" constant="8" id="dST-0g-axd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AJ2-ta-KRc" secondAttribute="trailing" id="hRY-Eb-IG8"/>
+                            <constraint firstItem="L8o-yV-G1l" firstAttribute="centerX" secondItem="EDb-3h-yvq" secondAttribute="centerX" id="hr6-0e-qtp"/>
+                            <constraint firstItem="duH-Kv-Zmp" firstAttribute="top" secondItem="QTF-XL-7rc" secondAttribute="bottom" id="pvZ-S3-cHF"/>
+                            <constraint firstItem="jNz-1c-ZCu" firstAttribute="centerX" secondItem="EDb-3h-yvq" secondAttribute="centerX" id="sld-rb-KjD"/>
+                            <constraint firstItem="GVe-hZ-JJk" firstAttribute="top" secondItem="AJ2-ta-KRc" secondAttribute="bottom" constant="8" id="z5s-An-5ju"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="トルツメ" id="dFs-VH-vdW"/>
+                    <connections>
+                        <outlet property="button" destination="GVe-hZ-JJk" id="ObG-sy-upe"/>
+                        <outlet property="buttonHeightConstraint" destination="6UW-IA-YjE" id="5Nr-zI-vJK"/>
+                        <outlet property="buttonTopConstraint" destination="z5s-An-5ju" id="fDd-n8-AMC"/>
+                        <outlet property="image" destination="jNz-1c-ZCu" id="9GC-mC-bgH"/>
+                        <outlet property="label" destination="AJ2-ta-KRc" id="vtG-Nz-Kfd"/>
+                        <outlet property="labelTopConstraint" destination="JdB-ms-4yF" id="5Tn-r4-A6r"/>
+                        <outlet property="swichButton" destination="L8o-yV-G1l" id="Q3L-8A-ZtQ"/>
+                        <outlet property="swichHeightConstraint" destination="2jO-9B-hks" id="WyB-Jn-slB"/>
+                        <outlet property="swichTopConstraint" destination="1ug-uz-1mO" id="duL-Z3-2f3"/>
+                        <outlet property="viewHeightConstraint" destination="H6x-EI-xa6" id="bIZ-O9-Mw3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ecg-Q2-DWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-460" y="325"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AlbertEinstein" width="100" height="133"/>
+    </resources>
+</document>

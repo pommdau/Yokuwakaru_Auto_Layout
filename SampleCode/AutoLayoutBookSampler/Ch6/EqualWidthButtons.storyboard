@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zGM-9P-9J3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--色選択-->
+        <scene sceneID="yIj-aZ-NA5">
+            <objects>
+                <viewController id="zGM-9P-9J3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ylb-dy-SiQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wG1-aA-kxR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ypi-pQ-u5a">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1l-nP-Qoz" userLabel="containerView" customClass="EqualWidthButtonView" customModule="autoLayoutBookSamples" customModuleProvider="target">
+                                <rect key="frame" x="20" y="285" width="560" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIP-Yx-yhl" userLabel="button2">
+                                        <rect key="frame" x="190" y="0.0" width="183" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="青">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p67-di-dbo" userLabel="button3">
+                                        <rect key="frame" x="381" y="0.0" width="183" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="黄">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiV-FD-ncV" userLabel="button1">
+                                        <rect key="frame" x="0.0" y="0.0" width="183" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="赤">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="yIP-Yx-yhl" firstAttribute="width" secondItem="GiV-FD-ncV" secondAttribute="width" id="6Os-VI-wNs"/>
+                                    <constraint firstItem="yIP-Yx-yhl" firstAttribute="centerY" secondItem="b1l-nP-Qoz" secondAttribute="centerY" id="E5Q-KM-vGM"/>
+                                    <constraint firstItem="GiV-FD-ncV" firstAttribute="top" secondItem="b1l-nP-Qoz" secondAttribute="top" id="KId-jb-HPc"/>
+                                    <constraint firstItem="yIP-Yx-yhl" firstAttribute="leading" secondItem="GiV-FD-ncV" secondAttribute="trailing" constant="8" id="bTl-q6-zQz"/>
+                                    <constraint firstItem="GiV-FD-ncV" firstAttribute="leading" secondItem="b1l-nP-Qoz" secondAttribute="leading" id="cer-le-usZ"/>
+                                    <constraint firstItem="p67-di-dbo" firstAttribute="centerY" secondItem="b1l-nP-Qoz" secondAttribute="centerY" id="hGq-xd-70m"/>
+                                    <constraint firstItem="GiV-FD-ncV" firstAttribute="width" secondItem="p67-di-dbo" secondAttribute="width" id="hyw-SM-BC2"/>
+                                    <constraint firstAttribute="trailing" secondItem="p67-di-dbo" secondAttribute="trailing" constant="-5" id="kSw-aG-csK"/>
+                                    <constraint firstItem="GiV-FD-ncV" firstAttribute="centerY" secondItem="b1l-nP-Qoz" secondAttribute="centerY" id="pMF-Jt-0IZ"/>
+                                    <constraint firstItem="p67-di-dbo" firstAttribute="leading" secondItem="yIP-Yx-yhl" secondAttribute="trailing" constant="8" id="sWA-wJ-Yu5"/>
+                                    <constraint firstAttribute="bottom" secondItem="GiV-FD-ncV" secondAttribute="bottom" id="xeH-aJ-ig0"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好きな色を選択してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYa-7A-YIF" userLabel="titleLabel">
+                                <rect key="frame" x="189" y="235" width="221" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="b1l-nP-Qoz" secondAttribute="trailing" id="DqE-hc-PXw"/>
+                            <constraint firstItem="b1l-nP-Qoz" firstAttribute="centerY" secondItem="Ypi-pQ-u5a" secondAttribute="centerY" id="Wzz-XC-3UZ"/>
+                            <constraint firstItem="b1l-nP-Qoz" firstAttribute="leading" secondItem="Ypi-pQ-u5a" secondAttribute="leadingMargin" id="cYn-CI-CrO"/>
+                            <constraint firstItem="HYa-7A-YIF" firstAttribute="centerX" secondItem="Ypi-pQ-u5a" secondAttribute="centerX" id="gWx-Cu-dNh"/>
+                            <constraint firstItem="b1l-nP-Qoz" firstAttribute="top" secondItem="HYa-7A-YIF" secondAttribute="bottom" constant="30" id="xnc-GX-6NM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="色選択" id="Ihp-F6-hVC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="haa-RD-ivi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221" y="346"/>
+        </scene>
+    </scenes>
+</document>

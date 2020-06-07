@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vik-zz-iJe">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Ambiguous Layout With Private Methods View Controller-->
+        <scene sceneID="Ft8-uZ-k5w">
+            <objects>
+                <viewController id="Vik-zz-iJe" customClass="AmbiguousLayoutWithPrivateMethodsViewController" customModule="autoLayoutBookSamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v38-vA-au0"/>
+                        <viewControllerLayoutGuide type="bottom" id="nkw-DJ-ha3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vs7-QO-5dW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4l2-7R-Z2f">
+                                <rect key="frame" x="237" y="95" width="126" height="30"/>
+                                <state key="normal" title="_autolayoutTrace()"/>
+                                <connections>
+                                    <action selector="autolayoutTraceAction:" destination="Vik-zz-iJe" eventType="touchUpInside" id="cov-Xa-ah5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXZ-oW-FJE">
+                                <rect key="frame" x="243" y="133" width="115" height="30"/>
+                                <state key="normal" title="_printHierarchy()"/>
+                                <connections>
+                                    <action selector="printHierarchyAction:" destination="Vik-zz-iJe" eventType="touchUpInside" id="Noj-wv-4Kd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WT2-FE-EcH">
+                                <rect key="frame" x="240" y="171" width="120" height="30"/>
+                                <state key="normal" title="_ivarDescription()"/>
+                                <connections>
+                                    <action selector="ivarDescriptionAction:" destination="Vik-zz-iJe" eventType="touchUpInside" id="bR1-nA-NMa"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ib-Ko-e6h">
+                                <rect key="frame" x="0.0" y="209" width="600" height="391"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ボタンをタップ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QC8-1T-B8G">
+                                <rect key="frame" x="240.5" y="28" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhF-x6-65l">
+                                <rect key="frame" x="224" y="57" width="152" height="30"/>
+                                <state key="normal" title="recursiveDescription()"/>
+                                <connections>
+                                    <action selector="recursiveDescriptionAction:" destination="Vik-zz-iJe" eventType="touchUpInside" id="5hT-B0-nw8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WT2-FE-EcH" firstAttribute="centerX" secondItem="Vs7-QO-5dW" secondAttribute="centerX" id="1J5-SY-TAi"/>
+                            <constraint firstItem="QC8-1T-B8G" firstAttribute="centerX" secondItem="Vs7-QO-5dW" secondAttribute="centerX" id="3Ey-gt-WxB"/>
+                            <constraint firstItem="vhF-x6-65l" firstAttribute="centerX" secondItem="Vs7-QO-5dW" secondAttribute="centerX" id="A36-4r-ga8"/>
+                            <constraint firstItem="QC8-1T-B8G" firstAttribute="top" secondItem="v38-vA-au0" secondAttribute="bottom" constant="8" id="EKc-HA-WRd"/>
+                            <constraint firstItem="nkw-DJ-ha3" firstAttribute="top" secondItem="5ib-Ko-e6h" secondAttribute="bottom" id="IQp-Kz-SLP"/>
+                            <constraint firstAttribute="trailing" secondItem="5ib-Ko-e6h" secondAttribute="trailing" id="L5A-NL-2Yz"/>
+                            <constraint firstItem="WT2-FE-EcH" firstAttribute="top" secondItem="EXZ-oW-FJE" secondAttribute="bottom" constant="8" id="M9L-X7-6P1"/>
+                            <constraint firstItem="4l2-7R-Z2f" firstAttribute="top" secondItem="vhF-x6-65l" secondAttribute="bottom" constant="8" id="SVN-Fj-ai1"/>
+                            <constraint firstItem="4l2-7R-Z2f" firstAttribute="centerX" secondItem="Vs7-QO-5dW" secondAttribute="centerX" id="biI-N5-MT1"/>
+                            <constraint firstItem="5ib-Ko-e6h" firstAttribute="leading" secondItem="Vs7-QO-5dW" secondAttribute="leading" id="cck-jl-MjM"/>
+                            <constraint firstItem="EXZ-oW-FJE" firstAttribute="centerX" secondItem="Vs7-QO-5dW" secondAttribute="centerX" id="lrU-Lh-WBP"/>
+                            <constraint firstItem="EXZ-oW-FJE" firstAttribute="top" secondItem="4l2-7R-Z2f" secondAttribute="bottom" constant="8" id="pKg-qR-2fb"/>
+                            <constraint firstItem="5ib-Ko-e6h" firstAttribute="top" secondItem="WT2-FE-EcH" secondAttribute="bottom" constant="8" id="wtt-Dd-rxE"/>
+                            <constraint firstItem="vhF-x6-65l" firstAttribute="top" secondItem="QC8-1T-B8G" secondAttribute="bottom" constant="8" id="xVh-TD-fPb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="5ib-Ko-e6h" id="LxH-tm-F6X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MyV-nV-Dzn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379" y="-29"/>
+        </scene>
+    </scenes>
+</document>

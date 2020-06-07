@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ETn-Du-xGy">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Conflicted Constraints View Controller-->
+        <scene sceneID="EwK-0v-yb9">
+            <objects>
+                <viewController id="ETn-Du-xGy" customClass="ConflictedConstraintsViewController" customModule="autoLayoutBookSamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O19-co-RDe"/>
+                        <viewControllerLayoutGuide type="bottom" id="3oU-YR-QPk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ufo-Cq-EMD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZsG-0i-EfK">
+                                <rect key="frame" x="20" y="28" width="246" height="30"/>
+                                <state key="normal" title="constraintsAffectingLayoutForAxis()"/>
+                                <connections>
+                                    <action selector="constraintsAffectingLayoutForAxisAction:" destination="ETn-Du-xGy" eventType="touchUpInside" id="rkJ-wU-q8U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdx-tL-pyu">
+                                <rect key="frame" x="20" y="66" width="226" height="30"/>
+                                <state key="normal" title="constraintsReferringViewAction()"/>
+                                <connections>
+                                    <action selector="constraintsReferringViewAction:" destination="ETn-Du-xGy" eventType="touchUpInside" id="ESG-sF-N7r"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="spo-m7-NSG">
+                                <rect key="frame" x="0.0" y="104" width="600" height="496"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pdx-tL-pyu" firstAttribute="top" secondItem="ZsG-0i-EfK" secondAttribute="bottom" constant="8" id="BEQ-Z3-I4Q"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="pdx-tL-pyu" secondAttribute="leading" id="BOd-5n-fty"/>
+                            <constraint firstItem="spo-m7-NSG" firstAttribute="top" secondItem="pdx-tL-pyu" secondAttribute="bottom" constant="8" id="N1z-dN-Ae3"/>
+                            <constraint firstItem="spo-m7-NSG" firstAttribute="leading" secondItem="ufo-Cq-EMD" secondAttribute="leading" id="Ppo-eA-YGg"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ZsG-0i-EfK" secondAttribute="leading" id="cSG-l6-hMX"/>
+                            <constraint firstItem="ZsG-0i-EfK" firstAttribute="top" secondItem="O19-co-RDe" secondAttribute="bottom" constant="8" id="nuL-5Y-WVg"/>
+                            <constraint firstAttribute="trailing" secondItem="spo-m7-NSG" secondAttribute="trailing" id="oQz-jF-x2V"/>
+                            <constraint firstItem="3oU-YR-QPk" firstAttribute="top" secondItem="spo-m7-NSG" secondAttribute="bottom" id="x3m-0a-rZB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="spo-m7-NSG" id="ojD-Ek-fnu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pp1-Ia-d9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="247"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6gP-bD-hTn">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--サンフランシスコ-->
+        <scene sceneID="ob4-JZ-oMJ">
+            <objects>
+                <viewController id="6gP-bD-hTn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7F3-aS-JYE"/>
+                        <viewControllerLayoutGuide type="bottom" id="tGs-M8-3C6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vfZ-k9-vh4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="サンフランシスコのカフェに行ってきた。SOMA地区にあるシングルオリジンで有名なカフェだ。巨大な焙煎機で焙煎される豆の良い香りが店内に。いわゆる、ヒップスターと呼ばれる人々が、クロワッサンやコーヒーを楽しんでいた。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gm8-5d-WVm" userLabel="label">
+                                <rect key="frame" x="20" y="524" width="560" height="81.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SF" translatesAutoresizingMaskIntoConstraints="NO" id="Csx-3l-Dix" userLabel="image">
+                                <rect key="frame" x="20" y="84" width="560" height="420"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Csx-3l-Dix" secondAttribute="height" multiplier="300:225" id="nP5-n6-4NN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Csx-3l-Dix" firstAttribute="top" secondItem="7F3-aS-JYE" secondAttribute="bottom" constant="20" id="BLo-Vd-E4d"/>
+                            <constraint firstItem="Gm8-5d-WVm" firstAttribute="leading" secondItem="vfZ-k9-vh4" secondAttribute="leadingMargin" id="KXh-VK-pjX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Csx-3l-Dix" secondAttribute="trailing" id="bwE-zn-Z8u"/>
+                            <constraint firstItem="Csx-3l-Dix" firstAttribute="leading" secondItem="vfZ-k9-vh4" secondAttribute="leadingMargin" id="mKP-3x-Cq6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gm8-5d-WVm" secondAttribute="trailing" id="tbt-7h-EA1"/>
+                            <constraint firstItem="Gm8-5d-WVm" firstAttribute="top" secondItem="Csx-3l-Dix" secondAttribute="bottom" constant="20" id="ydK-3f-qqL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="サンフランシスコ" id="edd-Ou-7aB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGI-cD-8ie" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="17"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SF" width="300" height="225"/>
+    </resources>
+</document>
